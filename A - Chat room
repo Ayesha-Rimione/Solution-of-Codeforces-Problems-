@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+main()
+{
+   string s,a;
+   cin>>s;
+   a="hello";
+   int f=0,j=0;
+   for(int i=0;i<a.size();i++)
+   {
+       while(s[j]!='\0')
+       {
+           if(a[i]==s[j])
+            {
+            f++;
+            j++;
+            break;
+            }
+            else
+            j++;
+            
+       }
+   }
+   if(f==5)
+    cout<<"YES";
+    else
+        cout<<"NO";
+   
+}
